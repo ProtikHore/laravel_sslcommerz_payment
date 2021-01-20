@@ -16,3 +16,6 @@ use App\Http\Controllers\PaymentController;
 
 Route::get('/', [PaymentController::class, 'index']);
 Route::post('/save/payment', [PaymentController::class, 'save']);
+Route::post('/payment/success', [PaymentController::class, 'success']);
+Route::post('/payment/cancel', [PaymentController::class, 'cancel']);
+Route::post('/payment/fail', [PaymentController::class, 'fail']);
