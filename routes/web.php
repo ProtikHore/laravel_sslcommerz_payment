@@ -14,6 +14,15 @@ use App\Http\Controllers\PaymentController;
 |
 */
 
+Route::get('clear', function(){
+    Artisan::call('view:clear');
+    Artisan::call('route:clear');
+    Artisan::call('cache:clear');
+    Artisan::call('config:clear');
+    Artisan::call('config:cache');
+});
+
+
 Route::get('/', [PaymentController::class, 'index']);
 Route::post('/save/payment', [PaymentController::class, 'save']);
 Route::post('/payment/success', [PaymentController::class, 'success']);

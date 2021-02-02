@@ -119,21 +119,24 @@ span.price {
 </head>
 <body>
 
-  <div class="row">
+<div class="row">
     <div class="col-75">
       <div class="container">
         <div class="row">
           <div class="col-50 text-enter">
-            Success
+            For Unavoidable Circumstances Your Registration is Failed.
+            <br>
+            Please Contact With Admin
           </div>
         </div>
         <div class="row">
           <div class="col-50 text-enter">
-            <button class="btn btn-sm">Home</button>
+            <a href="{{ url('/') }}" class="btn btn-sm">Home</a>
           </div>
         </div>
       </div>
     </div>
   </div>
+
 </body>
 </html>

@@ -94,7 +94,16 @@ label {
 }
 
 a {
-  color: #2196F3;
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
 }
 
 hr {
@@ -119,21 +128,24 @@ span.price {
 </head>
 <body>
 
-  <div class="row">
+<div class="row">
     <div class="col-75">
       <div class="container">
         <div class="row">
           <div class="col-50 text-enter">
-            Success
+            For Unavoidable Circumstances Your Registration is Cancelled.
+            <br>
+            Please Contact With Admin
           </div>
         </div>
         <div class="row">
           <div class="col-50 text-enter">
-            <button class="btn btn-sm">Home</button>
+            <a href="{{ url('/') }}" class="btn btn-sm">Home</a>
           </div>
         </div>
       </div>
     </div>
   </div>
+
 </body>
 </html>
